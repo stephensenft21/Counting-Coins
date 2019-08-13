@@ -16,14 +16,14 @@
 */
 
 function coinCounter (x) {
-  // Initialize a JavaScript object to hold the coins
+  // Initialize an empty JavaScript object to hold the coins
   let coinPurse = {};
-  
+  //use . notation to give money zero ammounts
   coinPurse.quarters = 0;
   coinPurse.dimes = 0;
   coinPurse.nickels = 0;
   coinPurse.pennies = 0;
-
+//declare "ammount asd "
   let amount = x;
 
   coinPurse.quarters = Math.floor(amount / .25);
@@ -46,5 +46,7 @@ function coinCounter (x) {
   return coinPurse;
 }
 
-let coins = coinCounter(.91)
+let coins = coinCounter(.56)
 console.log(coins);
+
+
